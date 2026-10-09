@@ -6,7 +6,15 @@ DELIMITER $$
 
 CREATE PROCEDURE CalculateSum()
 BEGIN
-    -- Declare two variables
+  DECLARE
+    a NUMBER := 10;
+    b NUMBER := 20;
+    total NUMBER;
+BEGIN
+    total := a + b;
+    DBMS_OUTPUT.PUT_LINE('Sum = ' || total);
+END;
+/  -- Declare two variables
     -- Assign values
     -- Calculate and display the sum
 
